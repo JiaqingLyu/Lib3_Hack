@@ -12,8 +12,10 @@ import firebaseConfig from './firebase';
 import { AngularFireModule } from '@angular/fire'
 import { AngularFireAuthModule} from "@angular/fire/auth";
 import { HttpClientModule } from '@angular/common/http';
-import {CookieService} from "ngx-cookie-service";
+import { CookieService } from "ngx-cookie-service";
 import { MenuController } from '@ionic/angular';
+import {InAppBrowser} from "@ionic-native/in-app-browser/ngx";
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -31,6 +33,7 @@ import { MenuController } from '@ionic/angular';
     SplashScreen,
       CookieService,
       MenuController,
+      InAppBrowser,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
