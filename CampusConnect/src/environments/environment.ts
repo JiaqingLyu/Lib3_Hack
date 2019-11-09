@@ -5,7 +5,10 @@
 export const environment = {
   production: false,
   apiUrl: 'https://newsapi.org/v2',
-  apiKey: '26f666708beb4a1cb92344f726334419'
+  apiKey: '26f666708beb4a1cb92344f726334419',
+
+  apiURL: 'https://umkc.instructure.com',
+  apiKEY: '10876~MbZEVkEy0wXg4Oy95Xa4QgGIjZ29eacv4BvssQintgOtMlgPf28DYBGp6Caezf1z'
 };
 
 /*
