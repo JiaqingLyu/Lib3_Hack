@@ -22,9 +22,15 @@ export class AppComponent {
     this.initializeApp();
   }
   userId = this.cookies.get("userId");
+
   goProfile() {
     this.router.navigate(['/account-page']);
   }
+  logOut() {
+    this.cookies.delete("userId");
+    this.router.navigate(['/login']);
+  }
+
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
