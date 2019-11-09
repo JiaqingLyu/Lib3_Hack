@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{article.title}}</ion-title>
+      <ion-item>
+          <ion-title>{{article.title}}</ion-title>
+          <ion-button item-right (click)="goBack()">return</ion-button>
+      </ion-item>
   </ion-toolbar>
 </ion-header>
 
