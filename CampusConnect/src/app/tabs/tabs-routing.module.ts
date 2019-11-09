@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
-import { NewsPage } from '../news/news.page';
+import { NewsPageModule } from '../news/news.module';
 
 const routes: Routes = [
   {
@@ -10,16 +10,14 @@ const routes: Routes = [
     children: [
       {
         path: 'news',
-        outlet: 'news',
-        component: NewsPage
-        // children: [
-        //   {
-        //     path: '',
-        //     loadChildren: () =>
-        //       import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../news/news.module').then(m => m.NewsPageModule)
 
-        //   }
-        // ]
+          }
+        ]
       },
       {
         path: 'tab2',
@@ -43,14 +41,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/news',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/(news:news)',
+    redirectTo: '/tabs/news',
     pathMatch: 'full'
   }
 ];

@@ -26,7 +26,7 @@ export class LoginPage implements OnInit{
     const{username,password} = this
     try{
         const res = await  this.afAuth.auth.signInWithEmailAndPassword(username,password)
-      this.navCtrl.navigateForward('/tabs/tab1');
+      this.navCtrl.navigateForward('/tabs/news');
     } catch (err) {
       console.dir(err)
       if(err.code === "auth/user-not-found"){
