@@ -17,7 +17,7 @@ export class NewsSinglePage implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['/news']);
+    this.router.navigate(['/tabs/news']);
   }
 
 }

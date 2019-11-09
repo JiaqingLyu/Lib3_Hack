@@ -12,6 +12,8 @@ import firebaseConfig from './firebase';
 import { AngularFireModule } from '@angular/fire'
 import { AngularFireAuthModule} from "@angular/fire/auth";
 import { HttpClientModule } from '@angular/common/http';
+import {CookieService} from "ngx-cookie-service";
+import { MenuController } from '@ionic/angular';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     StatusBar,
     SplashScreen,
+      CookieService,
+      MenuController,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
