@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {CoursesService} from '../courses.service';
+import {InAppBrowserOptions} from "@ionic-native/in-app-browser";
 
 @Component({
   selector: 'app-tab3',
@@ -8,21 +7,35 @@ import {CoursesService} from '../courses.service';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-  data: any;
-  constructor(private coursesService : CoursesService) {}
-  ngOnInit() {
-    this.coursesService
-      .getCourses()
-      .subscribe(data => {
-        this.data = data.split(',');
-        console.log(this.data[2]);
-        console.log(this.data[3]);
-    });
+
+
+  constructor(public iab:InAppBrowserOptions) {}
+  Career() {
+
+    const options : InAppBrowserOptions = {
+      location:'no'
+    }
+    const browser = this.iab.create('https://career.umkc.edu/slider/handshake/','_blank', options);
   }
-  // showCourse(){
-  //   for(var i = 0;i<this.data.length;i++){
-  //     return this.data[i];
-  //   }
-  // }
-  
+  BookStore() {
+
+    const options : InAppBrowserOptions = {
+      location:'no'
+    }
+    const browser = this.iab.create('https://www.umkcbookstore.com/','_blank', options);
+  }
+
+  facebook() {
+    const options : InAppBrowserOptions = {
+      location:'no'
+    }
+    const browser = this.iab.create('https://www.facebook.com/UMKansasCity/','_blank', options);
+  }
+
+  Findfood() {
+    const options : InAppBrowserOptions = {
+      location:'no'
+    }
+    const browser = this.iab.create('https://www.google.com/maps/search/food/','_blank', options);
+  }
 }

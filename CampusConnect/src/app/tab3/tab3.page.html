@@ -1,18 +1,25 @@
 <ion-header>
   <ion-toolbar>
-      <ion-item>
-          <ion-title>{{course}}</ion-title>
-      </ion-item>
+    <ion-title>
+      Explore
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
-  <ion-card *ngFor="let course of data">
-    <!-- <ion-img [src]="article.urlToImage"></ion-img> -->
-    <ion-card-content>
-      <p>{{course}}</p>
-      <!-- <p>{{article.description}}}</p> -->
-    </ion-card-content>
-  </ion-card>
+  <ion-list-header>You may interested in:</ion-list-header>
+  <ion-list>
+    <ion-item>
+      <ion-label postion="floating" (click)="Career()">Internship</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label postion="floating" (click)="BookStore()">Bookstore</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label postion="floating" (click)="facebook()">UMKC official Facebook</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label postion="floating" (click)="Findfood()">Find a nice Resturant</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
