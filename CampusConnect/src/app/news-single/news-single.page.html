@@ -1,20 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-      <ion-item>
-          <ion-title>{{article.title}}</ion-title>
-          <ion-button slot="end" (click)="goBack()">return</ion-button>
+  <ion-toolbar s color="secondary">
+      <ion-item color="secondary">
+          <ion-title class="p" color="primary">NEWS</ion-title>
+          <ion-button style="height: 30px;width: 60px" slot="end" (click)="goBack()">return</ion-button>
       </ion-item>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="success">
     <ion-card>
         <ion-img [src]="article.urlToImage"></ion-img>
 
         <ion-card-content>
           <ion-card-title>{{article.title}}</ion-card-title>
-          <p>{{article.description}}}</p>
-
+            <p>{{article.description}}</p>
         </ion-card-content>
-      </ion-card>
+    </ion-card>
 </ion-content>
