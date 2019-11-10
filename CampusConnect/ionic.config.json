@@ -1,5 +1,7 @@
 {
   "name": "CampusConnect",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
