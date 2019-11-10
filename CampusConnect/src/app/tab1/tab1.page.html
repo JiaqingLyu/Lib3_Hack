@@ -1,15 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-      <ion-title>Course</ion-title>
+  <ion-toolbar color="secondary">
+      <ion-title color="dark">Course</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content>
-  <ion-card *ngFor="let course of data">
+  <ion-card class="card" *ngFor="let course of data">
     <!-- <ion-img [src]="article.urlToImage"></ion-img> -->
     <ion-card-content>
-      <p>{{course}}</p>
+      <p class="p">{{course}}</p>
       <!-- <p>{{article.description}}}</p> -->
     </ion-card-content>
   </ion-card>

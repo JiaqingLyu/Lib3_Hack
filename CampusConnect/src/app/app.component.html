@@ -4,7 +4,7 @@
         <ion-header>
           <ion-card>
             <ion-card-header color="secondary">
-              Hello, {{userId}}
+                <p class="p">Hello, {{userId}} </p>
             </ion-card-header>
           </ion-card>
           <ion-toolbar>
@@ -15,10 +15,10 @@
           <ion-list>
             <ion-menu-toggle auto-hide="false">
               <ion-item>
-                <ion-button (click)="goProfile()"> Account Profile </ion-button>
+                  <ion-button color="secondary" (click)="goProfile()"> <p class="p">Account Profile</p> </ion-button>
               </ion-item>
               <ion-item>
-                <ion-button (click)="logOut()"> Logout </ion-button>
+                  <ion-button color="secondary" (click)="logOut()"> <p class="p">Logout </p></ion-button>
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
