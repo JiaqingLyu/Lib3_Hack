@@ -8,17 +8,23 @@
             </ion-card-header>
           </ion-card>
           <ion-toolbar>
-            <ion-title>Menu</ion-title>
+            <ion-title class="p">Menu</ion-title>
           </ion-toolbar>
         </ion-header>
         <ion-content>
           <ion-list>
             <ion-menu-toggle auto-hide="false">
               <ion-item>
-                  <ion-button color="secondary" (click)="goProfile()"> <p class="p">Account Profile</p> </ion-button>
-              </ion-item>
+                  <ion-icon name="contact"></ion-icon>
+                  <ion-button size="medium" color="sucess" (click)="goProfile()"> 
+                    <p class="p">Account Profile</p> 
+                  </ion-button>
+                </ion-item>
               <ion-item>
-                  <ion-button color="secondary" (click)="logOut()"> <p class="p">Logout </p></ion-button>
+                  <ion-icon name="exit"></ion-icon>
+                  <ion-button size="medium" color="sucess" (click)="logOut()"> 
+                    <p class="p">Logout </p>
+                  </ion-button>
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
