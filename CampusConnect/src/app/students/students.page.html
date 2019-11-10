@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-item color="secondary">
+            <ion-title class="p" color="primary">{{coursename}}</ion-title>
+            <ion-button style="height: 30px;width: 60px" slot="end" (click)="goBack()">return</ion-button>
+        </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content color="medium">
+    <ion-card class="card" *ngFor="let student of studentlist | keyvalue" (click)="onGoToStudentSinglePage(student)">
+        <!-- <ion-img [src]="article.urlToImage"></ion-img> -->
+              <ion-card-header>
+                <ion-card-title>{{student.key}}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                {{student.value}}
+              </ion-card-content>
+      </ion-card>
+</ion-content>

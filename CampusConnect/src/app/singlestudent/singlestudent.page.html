@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-item color="secondary">
+            <ion-title class="p" color="primary">{{student.key}}</ion-title>
+            <ion-button style="height: 30px;width: 60px" slot="end" (click)="goBack()">return</ion-button>
+        </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content color="medium">
+    <ion-card class="card">
+        <ion-card-content>
+          <ion-card-title>{{student.key}}</ion-card-title>
+          <p>{{student.value}}</p>
+        </ion-card-content>
+      </ion-card>
+    <ion-item>
+        <ion-button shape="round" color="light" size="large" (click)="semail()">
+          <ion-icon slot="end" name="mail"> </ion-icon>
+        </ion-button>
+    </ion-item>
+</ion-content>
+
+
