@@ -8,6 +8,7 @@ import {InAppBrowserOptions} from "@ionic-native/in-app-browser";
 })
 export class Tab3Page {
 
+
   constructor(public iab:InAppBrowserOptions) {}
   Career() {
 

@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -9,7 +10,7 @@ const routes: Routes = [
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
   { path: 'news', loadChildren: './news/news.module#NewsPageModule' },
   { path: 'news-single', loadChildren: './news-single/news-single.module#NewsSinglePageModule' },
-  { path: 'class-students', loadChildren: './class-students/class-students.module#ClassStudentsPageModule' },
+  // { path: 'class-students', loadChildren: './class-students/class-students.module#ClassStudentsPageModule' },
 
 ];
 @NgModule({
@@ -19,3 +20,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+
