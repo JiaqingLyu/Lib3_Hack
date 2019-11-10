@@ -6,7 +6,7 @@
 
 
 <ion-content>
-  <ion-card class="card" *ngFor="let course of data">
+  <ion-card class="card" *ngFor="let course of data" (click)=goToCourseSinglePage(course)>
     <!-- <ion-img [src]="article.urlToImage"></ion-img> -->
     <ion-card-content>
       <p class="p">{{course}}</p>

@@ -11,6 +11,8 @@ const routes: Routes = [
   { path: 'news', loadChildren: './news/news.module#NewsPageModule' },
   { path: 'news-single', loadChildren: './news-single/news-single.module#NewsSinglePageModule' },
   { path: 'account-page', loadChildren: './account-page/account-page.module#AccountPagePageModule' },
+  { path: 'students', loadChildren: './students/students.module#StudentsPageModule' },
+  { path: 'singlestudent', loadChildren: './singlestudent/singlestudent.module#SinglestudentPageModule' },
 
 ];
 @NgModule({

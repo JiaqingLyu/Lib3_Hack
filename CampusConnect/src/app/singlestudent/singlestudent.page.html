@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-item>
+          <ion-title>{{student.key}}</ion-title>
+          <ion-button slot="end" (click)="goBack()">return</ion-button>
+      </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-content>
+          <ion-card-title>{{student.key}}</ion-card-title>
+          <p>{{student.value}}}</p>
+        </ion-card-content>
+      </ion-card>
+    <ion-item>
+        <ion-button shape="round" color="light" size="large" (click)="semail()">
+          <ion-icon slot="end" name="mail"> </ion-icon>
+        </ion-button>
+    </ion-item>
+</ion-content>
+
+
