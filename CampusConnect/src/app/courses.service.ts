@@ -9,6 +9,7 @@ const API_KEY = environment.apiKEY;
   providedIn: 'root'
 })
 export class CoursesService {
+  coursename: any;
   constructor(private http: HttpClient) { }
   //获取json数据
   getCourses(){

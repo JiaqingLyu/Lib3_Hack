@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CookieService } from "ngx-cookie-service";
 import { MenuController } from '@ionic/angular';
 import {InAppBrowser} from "@ionic-native/in-app-browser/ngx";
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import {InAppBrowser} from "@ionic-native/in-app-browser/ngx";
       CookieService,
       MenuController,
       InAppBrowser,
+      EmailComposer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
