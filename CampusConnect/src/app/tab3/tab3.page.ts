@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {InAppBrowserOptions} from "@ionic-native/in-app-browser";
+import {InAppBrowser} from "@ionic-native/in-app-browser/ngx";
 
 @Component({
   selector: 'app-tab3',
@@ -9,7 +10,7 @@ import {InAppBrowserOptions} from "@ionic-native/in-app-browser";
 export class Tab3Page {
 
 
-  constructor(public iab:InAppBrowserOptions) {}
+  constructor(public iab:InAppBrowser) {}
   Career() {
 
     const options : InAppBrowserOptions = {

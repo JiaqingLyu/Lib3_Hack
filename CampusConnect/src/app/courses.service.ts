@@ -12,6 +12,6 @@ export class CoursesService {
   constructor(private http: HttpClient) { }
   //获取json数据
   getCourses(){
-    return this.http.get('http://127.0.0.1:64000/',{responseType: 'text'});
+    return this.http.get('http://localhost:64000/',{responseType: 'text'});
   }
 }

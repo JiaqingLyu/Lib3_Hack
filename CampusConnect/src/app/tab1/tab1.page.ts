@@ -13,6 +13,9 @@ export class Tab1Page {
     this.coursesService
       .getCourses()
       .subscribe(data => {
+          data.replace('"','');
+          data.replace('[','');
+          data.replace(']','');
         this.data = data.split(',');
         console.log(this.data[2]);
         console.log(this.data[3]);
